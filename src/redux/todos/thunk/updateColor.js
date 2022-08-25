@@ -3,7 +3,7 @@ import { colorSelected } from "../actions";
 const updateColor = (todoId, color) => {
   return async (dispatch) => {
     const response = await fetch(
-      `http://localhost:8000/todos/${todoId}`,
+      `https://todo-app-by-najmus-sakib.herokuapp.com/todos/${todoId}`,
       {
         method: "PATCH",
         body: JSON.stringify({

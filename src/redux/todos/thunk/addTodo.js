@@ -3,7 +3,7 @@ import { added } from "../actions";
 const addTodo = (todoText) => {
   return async (dispatch) => {
     const response = await fetch(
-      "http://localhost:8000/todos",
+      "https://todo-app-by-najmus-sakib.herokuapp.com/todos",
       {
         method: "POST",
         body: JSON.stringify({

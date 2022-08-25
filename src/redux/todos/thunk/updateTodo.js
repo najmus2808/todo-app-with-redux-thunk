@@ -3,7 +3,7 @@ import { edited, loaded } from "../actions";
 const updateTodo = (id, text) => {
   return async (dispatch) => {
     const response = await fetch(
-      `http://localhost:8000/todos/${id}`,
+      `https://todo-app-by-najmus-sakib.herokuapp.com/todos/${id}`,
       {
         method: "PATCH",
         body: JSON.stringify({
@@ -18,7 +18,7 @@ const updateTodo = (id, text) => {
 
     if (todo) {
       const responseTodos = await fetch(
-        "http://localhost:8000/todos"
+        "https://todo-app-by-najmus-sakib.herokuapp.com/todos"
       );
       const todos = await responseTodos.json();
 

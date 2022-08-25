@@ -2,7 +2,7 @@ import { loaded } from "../actions";
 
 const fetchTodos = async (dispatch) => {
   const response = await fetch(
-    "http://localhost:8000/todos"
+    "https://todo-app-by-najmus-sakib.herokuapp.com/todos"
   );
   const todos = await response.json();
 

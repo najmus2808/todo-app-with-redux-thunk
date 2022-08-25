@@ -1,3 +1,3 @@
 ## todo app
 
-### http://localhost:8000/todos
+### https://todo-app-by-najmus-sakib.herokuapp.com/todos
